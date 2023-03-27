@@ -46,14 +46,14 @@ TTTTTT  T:::::T  TTTTTT  D:::::D    D:::::D R::::R     R:::::R  B::::B     B::::
 
 {b+Fore.RED} x > {Fore.RESET}Options
 
-{b+Fore.RED} {1} > {Fore.RESET}illegal Conent {b+Fore.GREEN}::{Fore.RESET} 1
-{b+Fore.RED} {2} > {Fore.RESET}Harrassment {b+Fore.GREEN}::{Fore.RESET} 2
+{b+Fore.RED} {1} > {Fore.RESET}illegal Content {b+Fore.GREEN}::{Fore.RESET} 1
+{b+Fore.RED} {2} > {Fore.RESET}Harassment {b+Fore.GREEN}::{Fore.RESET} 2
 {b+Fore.RED} {3} > {Fore.RESET}Spam or Phishing Links {b+Fore.GREEN}::{Fore.RESET} 3
-{b+Fore.RED} {4} > {Fore.RESET}Self harm {b+Fore.GREEN}::{Fore.RESET} 4
+{b+Fore.RED} {4} > {Fore.RESET}Self Harm {b+Fore.GREEN}::{Fore.RESET} 4
 {b+Fore.RED} {5} > {Fore.RESET}NSFW Content {b+Fore.GREEN}::{Fore.RESET} 5
 """)
 
-token = "YOUR_CLIENT_TOKEN_HERE"
+token = input(f"{b+Fore.RESET} > CLIENT TOKEN{Fore.RESET}: ")
 headers = {'Authorization': token, 'Content-Type':  'application/json'}  
 r = requests.get('https://discord.com/api/v6/users/@me', headers=headers)
 if r.status_code == 200:
