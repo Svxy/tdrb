@@ -6,7 +6,7 @@ A simple yet powerful Discord report bot application for defensive or offensive 
 
 <br>
 
-<p align=center><img src='.\assets\preview.png' width='50%'></p>
+<p align=center><img src='.\assets\preview.png' width='65%'></p>
 
 <br>
 
